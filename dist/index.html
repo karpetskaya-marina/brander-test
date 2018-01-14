@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<section class="container">
+		<form action="#" class="form">
+			<div class="form__item">
+				<label for="" class="form__item__title">Вес изделия</label>
+				<input type="text" class="form__input form__input--bordered" placeholder="Вес изделия" name="weight" id="weight" value="15 г">
+			</div>
+			<div class="form__item">
+				<span class="form__item__title">Проба металла</span>
+				<select name="probe" id="probe" class="form__select form__select--bordered">
+					<option value="585">585 проба</option>
+					<option value="999">999 проба</option>
+				</select>
+			</div>
+			<div class="form__item">
+				<input type="checkbox" class="form__input form__checkbox" id="checkbox">
+				<label for="checkbox" class="form__label">Камни и вставки</label>
+				<span class="form__info">Окончательная оценочная стоимость залога может отличаться от указанной в расчете</span>
+			</div>
+			<div class="form__item">
+				<span class="form__item__title">Тарифный план <span class="form__icon-info">i<span class="tooltip">Подсказка</span></span></span>
+				<select name="rate" id="rate" class="form__select">
+					<option value="simple">«Простой»</option>
+					<option value="complex">«Сложный»</option>
+				</select>
+			</div>
+			<div class="form__item">
+				<span class="form__item__title">Ваш дисконтный статус</span>
+				<select name="probe" id="probe" class="form__select">
+					<option value="none">Без статуса</option>
+					<option value="status1">Статус 1</option>
+				</select>
+			</div>
+			<div class="form__item">
+				<span class="form__item__title">Срок кредитования	до продления</span>
+				<input type="range" class="form__input form__range" name="range" min="1" max="30">
+			</div>
+			<button type="submit" class="button">Рассчитать кредит</button>
+		</form>
+	</section>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
